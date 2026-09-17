@@ -164,6 +164,24 @@
     font-size: 0.78rem;
     color: var(--dim);
   }
+ 
+  .footer-links{
+    margin-top: 0.6rem;
+    display:flex;
+    justify-content:center;
+    gap: 1.1rem;
+    flex-wrap: wrap;
+  }
+  .footer-links a{
+    color: var(--teal-bright);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 1px;
+    transition: border-color 0.2s ease;
+  }
+  .footer-links a:hover, .footer-links a:focus{
+    border-bottom-color: var(--teal-bright);
+  }
 </style>
 </head>
 <body>
@@ -204,7 +222,7 @@
       <div class="course-body">
         <h2>Carte de France des voyages</h2>
         <p>Régions parcourues, itinéraires suivis, région par région.</p>
-        <a class="open" href="#" data-site="carte-france-voyages.html">Ouvrir la carte de France</a>
+        <a class="open" href="carte-france-voyages.html">Ouvrir la carte de France</a>
       </div>
     </div>
  
@@ -224,7 +242,13 @@
  
   </div>
  
-  <footer class="colophon">Une facette de l'Atlas des facettes.</footer>
+  <footer class="colophon">
+    Une facette de l'Atlas des facettes.
+    <div class="footer-links">
+      <a href="https://www.instagram.com/lucasrouer" target="_blank" rel="noopener">Instagram — @lucasrouer</a>
+      <a href="https://www.polarsteps.com/LucasRouer" target="_blank" rel="noopener">Polarsteps</a>
+    </div>
+  </footer>
 </div>
  
 </body>
